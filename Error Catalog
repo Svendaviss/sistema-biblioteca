@@ -1,0 +1,56 @@
+1 Execução diretamente pelo cmd: 
+
+---- Menu ----
+1 - Membros
+2 - Funcionários
+3 - Empréstimo de Livros
+4 - Livros
+5 - Categorias
+6 - Autores
+
+> node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+AggregateError [ECONNREFUSED]:
+    at internalConnectMultiple (node:net:1121:18)
+    at afterConnectMultiple (node:net:1688:7)
+Emitted 'error' event on Connection instance at:
+    at Connection._notifyError (C:\Users\svend\Documents\Estudos\UFAL\Banco de Dados\node_modules\mysql2\lib\connection.js:252:12)
+    at Connection._handleFatalError (C:\Users\svend\Documents\Estudos\UFAL\Banco de Dados\node_modules\mysql2\lib\connection.js:183:10)
+    at Connection._handleNetworkError (C:\Users\svend\Documents\Estudos\UFAL\Banco de Dados\node_modules\mysql2\lib\connection.js:196:10)
+    at Socket.emit (node:events:518:28)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'ECONNREFUSED',
+  fatal: true,
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:3306
+        at createConnectionError (node:net:1651:14)
+        at afterConnectMultiple (node:net:1681:16) {
+      errno: -4078,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 3306
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:3306
+        at createConnectionError (node:net:1651:14)
+        at afterConnectMultiple (node:net:1681:16) {
+      errno: -4078,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 3306
+    }
+  ]
+}
+
+Node.js v22.11.0
+
+---Erro Bobão, aparentemente eu não tinha sql instalado
+--------------------------
+
+
+
